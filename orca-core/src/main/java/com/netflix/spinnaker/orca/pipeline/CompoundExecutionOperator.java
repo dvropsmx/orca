@@ -27,7 +27,6 @@ import java.util.function.Consumer;
 import java.util.function.Supplier;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
-import lombok.NonNull;
 import lombok.Value;
 import lombok.experimental.NonFinal;
 import lombok.extern.slf4j.Slf4j;
@@ -87,10 +86,10 @@ public class CompoundExecutionOperator {
   }
 
   public PipelineExecution updateStage(
-      @NonNull ExecutionType executionType,
-      @NonNull String executionId,
-      @NonNull String stageId,
-      @NonNull Consumer<StageExecution> stageUpdater) {
+      @Nonnull ExecutionType executionType,
+      @Nonnull String executionId,
+      @Nonnull String stageId,
+      @Nonnull Consumer<StageExecution> stageUpdater) {
     return doInternal(
         runner::reschedule,
         () -> {
