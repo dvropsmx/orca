@@ -10,7 +10,6 @@ COPY orca-web/build/install/orca /opt/orca
 RUN yum -y update-minimal --security --sec-severity=Important --sec-severity=Critical --setopt=tsflags=nodocs
 RUN yum -y install java-11-openjdk-headless.x86_64 wget vim
 RUN useradd spinnaker
-
 RUN mkdir -p /opt/orca/plugins && chown -R spinnaker:nogroup /opt/orca/plugins
 USER spinnaker
 CMD ["/opt/orca/bin/orca"]
