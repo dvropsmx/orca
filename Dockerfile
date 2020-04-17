@@ -1,9 +1,9 @@
 FROM registry.access.redhat.com/ubi8/ubi
-LABEL name='deck'
+LABEL name='roca'
 LABEL maintainer='info@opsmx.io'
 LABEL release=2
 LABEL version='1.18.5'
-LABEL summary='Red Hat certified Open Enterprise Spinnaker ubi8 container image for deck'
+LABEL summary='Red Hat certified Open Enterprise Spinnaker ubi8 container image for orca'
 LABEL description='Certified Open Enterprise Spinnaker is an Enterprise grade, Red Hat certified and OpsMx supported release of the popular and critically acclaimed Continuous Delivery platform Spinnaker'
 LABEL vendor='OpsMx'
 
